@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body class="container mx-auto">
+    <header>
+        <div class="navbar bg-orange-400 rounded-full px-12 mt-12">
+            <div class="flex-1">
+                <div class="flex gap-4">
+                    <p class="text-white text-sm">home</p>
+                    <p class="text-white text-sm">About Us</p>
+                    <p class="text-white text-sm">home</p>
+                    <p class="text-white text-sm">About Us</p>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="flex">
+                    <img src="images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst</a>
+                </div>
+            </div>
+            <div class="flex-none gap-2">
+              <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+              </div>
+              <!-- <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                  </div>
+                </label>
+                <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+    </header>
+
+    <main>
+        <div class="carousel w-full mt-14">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+              <div class="absolute hidden py-5 md:block bg-gradient-to-t from-gray-500  to-gray-950 opacity-75 w-full h-full "></div>
+              <div class="absolute hidden py-5 text-center text-white md:block w-full h-full ">
+                <div>
+                    <h5 class="text-3xl pt-10 pb-10">Second slide label</h5>
+                    <p > Some representative placeholder content for the second slide.</p>
+                    <button class="btn btn-active btn-secondary mt-8">Secondary</button>
+                </div>
+                </div>
+            </div>
+
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        <section class="mt-10"> 
+            <!-- hot deal -->
+            <div class="flex justify-between">  
+                <div>
+                    <p class="text-2xl font-bold">Hot Deal Section</p>
+                    <p class="text-4">You will get 50% discount!! </p>
+                </div>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                    </span>
+                    days
+                    </div> 
+                    <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                    </span>
+                    hours
+                    </div> 
+                    <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                    </span>
+                    min
+                    </div> 
+                    <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:40;"></span>
+                    </span>
+                    sec
+                    </div>
+                </div>
+            </div>
+            <!-- card section -->
+            <div class="flex gap-6">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/fruit4.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Orange</p>
+                      <div>
+                        <div class="rating rating-md rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                        </div>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/fruit3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Orange</p>
+                      <div>
+                        <div class="rating rating-md rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                        </div>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/fruit2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Orange</p>
+                      <div>
+                        <div class="rating rating-md rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                        </div>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/fruit1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Orange</p>
+                      <div>
+                        <div class="rating rating-md rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                        </div>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- team section -->
+            <div class="w-full mt-14">
+                <img src="images/banner1.png" class="w-full" />
+              <!-- <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              </div> -->
+              <div class="absolute hidden py-5 md:block bg-gradient-to-t from-gray-500  to-gray-950 opacity-75 w-full h-full"> </div>
+              <div class="absolute hidden text-center text-white md:block w-full h-full ">
+                <div>
+                    <h5 class="text-3xl pt-10 pb-10">Second slide label</h5>
+                    <p > Some representative placeholder content for the second slide.</p>
+
+                    <!-- card section -->
+                    <div class="flex gap-6">
+                        <div class="card w-96 ">
+                            <figure class="px-10 pt-10"> <img src="images/fruit4.png" class="rounded-xl" /> </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">12.90$ - 18.85$</h2>
+                                <p>Orange</p>
+                            </div>
+                        </div>
+
+                        <div class="card w-96">
+                            <figure class="px-10 pt-10"> <img src="images/fruit3.png" class="rounded-xl" /> </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">12.90$ - 18.85$</h2>
+                                <p>Orange</p>
+                            </div>
+                        </div>
+
+                        <div class="card w-96">
+                            <figure class="px-10 pt-10"> <img src="images/fruit2.png" class="rounded-xl" /> </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">12.90$ - 18.85$</h2>
+                                <p>Orange</p>
+                            </div>
+                        </div>
+
+                        <div class="card w-96">
+                            <figure class="px-10 pt-10"> <img src="images/fruit1.png" alt="Shoes" class="rounded-xl" /></figure>
+                            <div class="card-body items-center text-center">
+                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                            <p>Orange</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
